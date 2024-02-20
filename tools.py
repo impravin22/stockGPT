@@ -11,7 +11,7 @@ def check_real_price(stock_symbol):
     querystring = {"symbol": stock_symbol, "format": "json", "outputsize": "30"}
 
     headers = {
-        "X-RapidAPI-Key": "789fa8ec00msh40e4c33fdee3b40p162f68jsncf8a2fc8f64a",
+        "X-RapidAPI-Key": "your_api_key",
         "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com",
     }
 
@@ -38,7 +38,7 @@ def check_week_volume(stock_symbol):
     }
 
     headers = {
-        "X-RapidAPI-Key": "789fa8ec00msh40e4c33fdee3b40p162f68jsncf8a2fc8f64a",
+        "X-RapidAPI-Key": "your_api_key",
         "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com",
     }
 
@@ -60,7 +60,7 @@ def check_month_volume(stock_symbol):
     }
 
     headers = {
-        "X-RapidAPI-Key": "789fa8ec00msh40e4c33fdee3b40p162f68jsncf8a2fc8f64a",
+        "X-RapidAPI-Key": "your_api_key",
         "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com",
     }
 
@@ -82,7 +82,7 @@ def check_30min_volume(stock_symbol):
     }
 
     headers = {
-        "X-RapidAPI-Key": "789fa8ec00msh40e4c33fdee3b40p162f68jsncf8a2fc8f64a",
+        "X-RapidAPI-Key": "your_api_key",
         "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com",
     }
 
@@ -104,7 +104,7 @@ def check_stock_symbol(stock_symbol):
     }
 
     headers = {
-        "X-RapidAPI-Key": "789fa8ec00msh40e4c33fdee3b40p162f68jsncf8a2fc8f64a",
+        "X-RapidAPI-Key": "your_api_key",
         "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com",
     }
 
@@ -134,7 +134,7 @@ def get_stock_recommendation(thirty_volume, avg_volume, month_volume, week_volum
 
     """
     explanation_prompt += json.dumps(stock_quote)
-    openai.api_key = "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"
+    openai.api_key = "your_api_key"
 
     response = openai.ChatCompletion.create(
         model="gpt-4",
